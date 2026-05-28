@@ -1,0 +1,42 @@
+Tu es un expert en développement web UI avec plus de 20 ans d'expérience. Crée un template de site scolaire bien structuré en HTML5, CSS3, Bootstrap 5 (dernière version) et jQuery (dernière version).
+
+Spécifications techniques :
+- Structure HTML sémantique et bien organisée
+- Bootstrap 5.3 (dernière version stable)
+- jQuery 3.7 (dernière version)
+- Police de caractères moderne et lisible (suggestion: 'Poppins' ou 'Roboto' de Google Fonts)
+- Design épuré, professionnel et adapté au milieu scolaire
+- AUCUN dégradé (gradients) dans le design
+- Responsive design (mobile-first)
+- Navigation claire et intuitive
+
+Palette de couleurs STRICTE :
+- Couleur primaire : #18385f (bleu foncé) - pour header, navigation, boutons principaux
+- Couleur secondaire : #c00000 (rouge) - pour accents, boutons d'action, highlights
+- Couleur neutre : Blanc #ffffff - pour fond principal, texte sur fond sombre
+- Texte : #333333 gris foncé sur fond blanc
+- Pas d'autres couleurs sauf si nécessaire pour l'accessibilité
+
+Sections à inclure :
+1. Header avec logo, nom de l'école, navigation principale
+2. Hero section avec message d'accueil et call-to-action
+3. Section "À propos" de l'école
+4. Section "Programmes/Formation"
+5. Section "Actualités/Événements"
+6. Section "Contact" avec formulaire
+7. Footer avec liens utiles, coordonnées, réseaux sociaux
+
+Exigences de design :
+- Style moderne mais classique pour un établissement scolaire
+- Espacement généreux (whitespace)
+- Contraste fort pour la lisibilité
+- Animations subtiles au hover (sans dégradé)
+- Bords arrondis modérés (border-radius: 4-8px)
+
+Fournis :
+1.  fichier HTML complet avec toutes les sections des files bien séparées
+2. Un fichier CSS personnalisé (en plus de Bootstrap)
+3. Le code jQuery pour les interactions basiques (menu mobile, formulaire)
+4. Commentaires dans le code pour expliquer les sections
+
+Le résultat doit être professionnel, prêt à l'emploi, et facile à personnaliser pour n'importe quel établissement scolaire.
