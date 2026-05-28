@@ -161,4 +161,7 @@ var swiper = new Swiper(".newsSwiper", {
         768: { slidesPerView: 2 },
         1200: { slidesPerView: 3 }
     }
+
+    
 });
+
