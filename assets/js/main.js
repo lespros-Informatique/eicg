@@ -139,3 +139,26 @@ $(document).ready(function() {
         });
     });
 });
+
+
+var swiper = new Swiper(".newsSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 }
+    }
+});

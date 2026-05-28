@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <!-- ============================================================
          META & SEO
     ============================================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Groupe EICG – École Internationale de Commerce et de Gestion. Agir pour développer la culture de l'excellence.">
-    <meta name="keywords" content="Groupe EICG, EICG, commerce, gestion, BTS, Licence, Master, Data Analyst, école Kinshasa">
+    <meta name="description"
+        content="Groupe EICG – École Internationale de Commerce et de Gestion. Agir pour développer la culture de l'excellence.">
+    <meta name="keywords"
+        content="Groupe EICG, EICG, commerce, gestion, BTS, Licence, Master, Data Analyst, école Kinshasa">
     <meta name="author" content="Groupe EICG">
     <title>GROUPE EICG | École Internationale de Commerce et de Gestion</title>
 
@@ -16,7 +19,8 @@
     ============================================================ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- ============================================================
          BOOTSTRAP 5.3 (CDN)
@@ -27,937 +31,1146 @@
          BOOTSTRAP ICONS
     ============================================================ -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
     <!-- ============================================================
          CSS PERSONNALISÉ
     ============================================================ -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<!-- Skip to content for Accessibility -->
-<a href="#hero" class="skip-to-content">Aller au contenu principal</a>
+    <!-- Skip to content for Accessibility -->
+    <a href="#hero" class="skip-to-content">Aller au contenu principal</a>
 
-<!-- ================================================================
+    <!-- ================================================================
      BARRE D'INFORMATION SUPÉRIEURE (Top Bar)
 ================================================================ -->
-<div class="topbar d-none d-lg-block">
-    <div class="container">
-        <div class="row align-items-center py-2">
-            <div class="col-md-10">
-                <ul class="topbar-info list-unstyled d-flex gap-4 mb-0">
-                    <li>
-                        <i class="bi bi-telephone-fill me-1"></i>
-                        <span>+243 900 000 000</span>
-                    </li>
-                    <li>
-                        <i class="bi bi-envelope-fill me-1"></i>
-                        <span>contact@eicg-edu.com</span>
-                    </li>
-                    <li>
-                        <i class="bi bi-geo-alt-fill me-1"></i>
-                        <span>Kinshasa, République Démocratique du Congo</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-2 text-end">
-                <ul class="topbar-social list-unstyled d-flex justify-content-end gap-3 mb-0">
-                    <li><a href="https://fb.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ================================================================
-     HEADER & NAVIGATION PRINCIPALE
-================================================================ -->
-<header id="main-header" class="sticky-top">
-    <nav class="navbar navbar-expand-lg" id="mainNav" aria-label="Navigation principale">
+    <div class="topbar d-none d-lg-block">
         <div class="container">
-
-            <!-- LOGO & NOM DE L'ÉCOLE -->
-            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html" aria-label="Accueil Groupe EICG">
-                <div class="logo-circle" aria-hidden="true">
-                    <!-- <span class="logo-initials">E</span> -->
-                     <img src="assets/images/logo-eicg.jpg" alt="LOGO">
-                </div>
-                <div class="brand-text">
-                    <span class="brand-name">GROUPE EICG</span>
-                    <span class="brand-tagline">Commerce & Gestion</span>
-                </div>
-            </a>
-
-            <!-- BOUTON MENU MOBILE -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarMain" aria-controls="navbarMain"
-                    aria-expanded="false" aria-label="Ouvrir le menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- LIENS DE NAVIGATION -->
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#hero">Accueil</a>
-                    </li>
-                    
-                    <!-- Dropdown Présentation -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#about" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            Présentation
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#about">Qui sommes-nous ?</a></li>
-                            <li><a class="dropdown-item" href="#galerie-photo">GALERIE PHOTOS</a></li>
-                            <li><a class="dropdown-item" href="#galerie-video">GALERIE VIDÉOS</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Dropdown Formations -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#formations" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            Formations
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#formations">BTS</a></li>
-                            <li><a class="dropdown-item" href="#formations">Licence</a></li>
-                            <li><a class="dropdown-item" href="#formations">Master</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#formations">Certification Data Analyst</a></li>
-                            <li><a class="dropdown-item" href="#formations">Certification Administration et Management des Affaires</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#stage-emploi">Stage/Emploi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cabinet">Cabinet</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item ms-lg-2">
-                        <a class="btn btn-secondary-custom" href="#contact">
-                            <i class="bi bi-pencil-square me-1"></i>Pré-inscription
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </nav>
-</header>
-
-<!-- ================================================================
-     SECTION HERO – Message d'accueil & Call-to-Action
-================================================================ -->
-<section id="hero" class="hero-section" aria-label="Bienvenue">
-    <div class="container">
-        <div class="row align-items-center min-vh-hero">
-
-            <!-- CONTENU TEXTE -->
-            <div class="col-lg-7 col-xl-6">
-                <div class="hero-content">
-                    <span class="hero-badge">Année académique 2025-2026</span>
-                    <h1 class="hero-title">
-                        Groupe EICG <br>
-                        <span class="text-accent" style="font-size: 0.65em; font-weight: 600; display: block; margin-top: 5px;">
-                            ECOLE INTERNATIONALE DE COMMERCE ET DE GESTION
-                        </span>
-                    </h1>
-                    <p class="hero-description">
-                        Le Groupe EICG est ravi de vous accueillir et de vous accompagner dans cette nouvelle étape de votre vie académique.
-                    </p>
-                    <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
-                        <a href="#contact" class="btn btn-secondary-custom btn-lg">
-                            <i class="bi bi-pencil-square me-2"></i>Pré-inscription ici
-                        </a>
-                        <a href="#formations" class="btn btn-outline-custom btn-lg">
-                            <i class="bi bi-book-fill me-2"></i>Nos Formations
-                        </a>
-                    </div>
-                    
-                    <!-- RÉSEAUX SOCIAUX VISIBLES SUR MOBILE/HERO -->
-                    <div class="d-lg-none mt-4">
-                        <a href="https://fb.com" target="_blank" rel="noopener" class="btn btn-outline-primary-custom btn-sm me-2">
-                            <i class="bi bi-facebook me-1"></i>Facebook
-                        </a>
-                        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="btn btn-outline-primary-custom btn-sm">
-                            <i class="bi bi-youtube me-1"></i>Youtube
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- IMAGE / VISUEL HERO -->
-            <div class="col-lg-5 col-xl-6 d-none d-lg-flex justify-content-end">
-                <div class="hero-visual" aria-hidden="true">
-                    <div class="hero-img-wrapper">
-                        <!-- Visuel Licence / Master -->
-                         <img src="https://groupe-eicg.com/wp-content/uploads/2025/02/cropped-EICG-2025-copie.png" alt="GROUPE EICG 2025">
-                        <!-- <img src="images/licencemaster.jpg" alt="Licence et Master EICG" class="hero-img"
-                             onerror="this.onerror=null;this.src='https://placehold.co/520x420/18385f/ffffff?text=VISUEL+Licence+Master'"> -->
-                    </div>
-                    <!-- BADGE FLOTTANT -->
-                    <div class="floating-badge">
-                        <i class="bi bi-award-fill"></i>
-                        <div>
-                            <strong>Culture de l'excellence</strong>
-                            <small>Groupe EICG 2025</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ================================================================
-     SECTION DES TROIS VALEURS CARDINALES
-================================================================ -->
-<section class="py-5 bg-white border-bottom">
-    <div class="container">
-        <div class="row g-4">
-            
-            <!-- Rigueur -->
-            <div class="col-md-4">
-                <div class="value-item h-100">
-                    <div class="value-icon"><i class="bi bi-stopwatch"></i></div>
-                    <div>
-                        <strong style="font-size: 1.15rem; color: var(--color-primary);">Rigueur</strong>
-                        <p class="mb-0 small text-muted mt-1">
-                            Nous garantisons cette qualité professionnelle la plus appréciée en entreprise. "faire ce que l'on dit, et dire ce que l'on fait".
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Travail -->
-            <div class="col-md-4">
-                <div class="value-item h-100">
-                    <div class="value-icon"><i class="bi bi-person-workspace"></i></div>
-                    <div>
-                        <strong style="font-size: 1.15rem; color: var(--color-primary);">Travail</strong>
-                        <p class="mb-0 small text-muted mt-1">
-                            Garant d'une reconnaissance, qu'elle soit personnelle ou professionnelle. Nous valorise et participe à notre plein épanouissement.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Excellence -->
-            <div class="col-md-4">
-                <div class="value-item h-100">
-                    <div class="value-icon"><i class="bi bi-award-fill"></i></div>
-                    <div>
-                        <strong style="font-size: 1.15rem; color: var(--color-primary);">Excellence</strong>
-                        <p class="mb-0 small text-muted mt-1">
-                            Pour être excellent, il faut donc être meilleur que les autres dans l'organisation de ses objectifs à atteindre.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ================================================================
-     SECTION À PROPOS / PRÉSENTATION
-================================================================ -->
-<section id="about" class="section-padding bg-light-custom" aria-labelledby="about-title">
-    <div class="container">
-
-        <!-- EN-TÊTE DE SECTION -->
-        <div class="section-header text-center mb-5">
-            <span class="section-label">Qui sommes-nous ?</span>
-            <h2 id="about-title" class="section-title">Notre Vision & Mission</h2>
-            <div class="section-divider" aria-hidden="true"></div>
-        </div>
-
-        <div class="row align-items-center g-5">
-
-            <!-- IMAGE À PROPOS -->
-            <div class="col-lg-5">
-                <div class="about-img-wrapper position-relative">
-                    <img src="images/about-eicg.jpg" alt="Présentation EICG"
-                         class="img-fluid rounded-lg about-main-img"
-                         onerror="this.onerror=null;this.src='https://placehold.co/500x400/18385f/ffffff?text=Présentation+EICG'">
-                    <!-- CARTE SUPERPOSÉE -->
-                    <div class="about-badge-card">
-                        <div class="about-badge-icon">
-                            <i class="bi bi-mortarboard-fill"></i>
-                        </div>
-                        <div>
-                            <strong>Excellence</strong>
-                            <small>Groupe EICG</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TEXTE À PROPOS -->
-            <div class="col-lg-7">
-                <div class="about-content">
-                    <h3 class="about-subtitle" style="color: var(--color-secondary);">
-                        <i class="bi bi-eye-fill me-2"></i>Notre Vision
-                    </h3>
-                    <p class="about-text" style="font-weight: 600; color: var(--color-primary);">
-                        Agir pour développer la culture de l'excellence.
-                    </p>
-                    <p class="about-text">
-                        Le Groupe École Internationale de Commerce et de Gestion est une école privée avec un programme national et international guidé par la conviction que chaque étudiant peut et doit atteindre son potentiel. Nous nous efforçons d'aider chaque étudiant à devenir un citoyen du monde actif, intelligent et Smart.
-                    </p>
-
-                    <h3 class="about-subtitle mt-4" style="color: var(--color-primary);">
-                        <i class="bi bi-rocket-takeoff-fill me-2"></i>Notre Mission
-                    </h3>
-                    <p class="about-text">
-                        Transmettre aux jeunes générations le savoir et le savoir-faire susceptible de leur garantir une vie professionnelle et sociale harmonieuse.
-                    </p>
-
-                    <!-- BOUTONS GALERIES -->
-                    <div class="d-flex flex-wrap gap-3 mt-4" id="galerie-photo">
-                        <a href="#galerie-photo" class="btn btn-primary-custom">
-                            <i class="bi bi-images me-2"></i>Galerie Photos
-                        </a>
-                        <a href="#galerie-video" class="btn btn-outline-custom" id="galerie-video">
-                            <i class="bi bi-play-btn-fill me-2"></i>Galerie Vidéos
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ================================================================
-     SECTION FORMATIONS / PROGRAMMES
-================================================================ -->
-<section id="formations" class="section-padding bg-white" aria-labelledby="prog-title">
-    <div class="container">
-
-        <!-- EN-TÊTE DE SECTION -->
-        <div class="section-header text-center mb-5">
-            <span class="section-label">Nos Formations</span>
-            <h2 id="prog-title" class="section-title">Programmes & Cursus Professionnels</h2>
-            <div class="section-divider" aria-hidden="true"></div>
-            <p class="section-subtitle">
-                Des parcours diplômants et des certifications d'excellence pour propulser votre carrière.
-            </p>
-        </div>
-
-        <!-- CARTES FORMATIONS -->
-        <div class="row g-4">
-
-            <!-- Cursus BTS -->
-            <div class="col-md-6 col-lg-4">
-                <article class="prog-card h-100" aria-label="Programme BTS">
-                    <div class="prog-card-icon">
-                        <i class="bi bi-journal-bookmark-fill"></i>
-                    </div>
-                    <h3 class="prog-card-title">BTS</h3>
-                    <p class="prog-card-text">
-                        Brevet de Technicien Supérieur. Une formation académique et technique solide en 2 ans pour intégrer rapidement le marché du travail ou poursuivre en Licence.
-                    </p>
-                    <ul class="prog-features list-unstyled">
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Commerce & Vente</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Gestion d'Entreprise</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Mises en situations réelles</li>
-                    </ul>
-                    <a href="#contact" class="prog-link">
-                        s'inscrire ici <i class="bi bi-arrow-right ms-1"></i>
-                    </a>
-                </article>
-            </div>
-
-            <!-- Cursus Licence -->
-            <div class="col-md-6 col-lg-4">
-                <article class="prog-card prog-card--featured h-100" aria-label="Licence Professionnelle">
-                    <div class="prog-card-badge">Inscription</div>
-                    <div class="prog-card-icon">
-                        <i class="bi bi-mortarboard-fill"></i>
-                    </div>
-                    <h3 class="prog-card-title">Licence Professionnelle</h3>
-                    <p class="prog-card-text">
-                        Un cursus d'excellence combinant théorie et pratique managériale avancée pour former des cadres intermédiaires performants et opérationnels dès leur sortie.
-                    </p>
-                    <ul class="prog-features list-unstyled">
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Management et Gestion</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Marketing & Communication</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Projets collectifs & Stages</li>
-                    </ul>
-                    <a href="#contact" class="prog-link text-white">
-                        s'inscrire ici <i class="bi bi-arrow-right ms-1"></i>
-                    </a>
-                </article>
-            </div>
-
-            <!-- Cursus Master -->
-            <div class="col-md-6 col-lg-4">
-                <article class="prog-card h-100" aria-label="Master Pro">
-                    <div class="prog-card-icon">
-                        <i class="bi bi-briefcase-fill"></i>
-                    </div>
-                    <h3 class="prog-card-title">Master Pro</h3>
-                    <p class="prog-card-text">
-                        Une formation professionnelle avec beaucoup de mises en situations et de projets collectifs, des interventions d’entreprise au cœur des cours. Le master « pro » joue tout son rôle et offre de bonnes perspectives d’insertion et d’évolution professionnelle.
-                    </p>
-                    <ul class="prog-features list-unstyled">
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Interventions d'experts</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Mises en situation réelles</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Projets collectifs</li>
-                    </ul>
-                    <a href="#contact" class="prog-link">
-                        s'inscrire ici <i class="bi bi-arrow-right ms-1"></i>
-                    </a>
-                </article>
-            </div>
-
-            <!-- Certification Data Analyst -->
-            <div class="col-md-6 col-lg-6">
-                <article class="prog-card h-100" aria-label="Certification Data Analyst">
-                    <div class="prog-card-icon">
-                        <i class="bi bi-database-fill-gear"></i>
-                    </div>
-                    <span class="text-accent small fw-bold uppercase">CERTIFICATION</span>
-                    <h3 class="prog-card-title mt-1">Data Analyst</h3>
-                    <p class="prog-card-text">
-                        Maîtrisez l’analyse de données en un temps record avec l’accompagnement de nos spécialistes du domaine. Devenez un expert recherché en entreprise.
-                    </p>
-                    <ul class="prog-features list-unstyled">
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Visualisation de données</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Statistiques & Décisions</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Accompagnement par des experts</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary-custom btn-sm mt-3">
-                        S'inscrire Data Analyst <i class="bi bi-arrow-right ms-1"></i>
-                    </a>
-                </article>
-            </div>
-
-            <!-- Certification Administration et Management -->
-            <div class="col-md-6 col-lg-6">
-                <article class="prog-card h-100" aria-label="Certification Administration et Management des Affaires">
-                    <div class="prog-card-icon">
-                        <i class="bi bi-shield-check"></i>
-                    </div>
-                    <span class="text-accent small fw-bold uppercase">CERTIFICATION</span>
-                    <h3 class="prog-card-title mt-1">Gestionnaire et Directeur (AMA)</h3>
-                    <p class="prog-card-text">
-                        Cette certification permet de développer des compétences clés pour gérer efficacement une entreprise et vous prépare à prendre des décisions stratégiques et à assurer la pérennité de votre activité.
-                    </p>
-                    <ul class="prog-features list-unstyled">
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Décisions stratégiques</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Gouvernance d'entreprise</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Pilotage de la performance</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary-custom btn-sm mt-3">
-                        S'inscrire Gestionnaire et Directeur <i class="bi bi-arrow-right ms-1"></i>
-                    </a>
-                </article>
-            </div>
-
-        </div>
-
-        <!-- STAGE / EMPLOI & CABINET INFORMATION -->
-        <div id="cabinet" class="pt-5 mt-4">
-            <div class="row align-items-center g-5 mb-5">
-                <div class="col-lg-6">
-                    <span class="section-label">Accompagnement & Performance</span>
-                    <h3 class="section-title text-start mb-3" style="color: var(--color-primary);">
-                        Cabinet EICG – Excellence en Formation Professionnelle Continue
-                    </h3>
-                    <p class="about-text fw-bold text-accent mb-3">
-                        Nos programmes de certification sont reconnus et délivrés par notre cabinet de formation, accrédité.
-                    </p>
-                    <p class="about-text">
-                        Le Cabinet EICG propose des formations professionnelles continues de qualité, adaptées aux besoins des entreprises et des particuliers. Nos programmes certifiants et sur mesure visent à développer les compétences et à accompagner les professionnels dans leur évolution, pour réussir dans un marché du travail en constante mutation.
-                    </p>
-                    <div class="mt-4">
-                        <a href="#contact" class="btn btn-secondary-custom btn-lg">
-                            <i class="bi bi-telephone-outbound me-2"></i>Nous consulter / S'inscrire
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="contact-info-item h-100 bg-light-custom border-2">
-                        <div class="contact-detail">
-                            <h4 style="font-size: 1.1rem; color: var(--color-primary); margin-bottom: 16px;">
-                                <i class="bi bi-patch-check-fill text-accent me-2"></i>Nos Domaines d'Intervention & Spécialités
-                            </h4>
-                            <ul class="prog-features list-unstyled row g-2">
-                                <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Droit, Fiscalité</li>
-                                <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Langues Vivantes</li>
-                                <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Management & Gestion</li>
-                                <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Assurance Qualité, Normes</li>
-                                <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Conduite de Projet</li>
-                                <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Commerce & Vente</li>
-                                <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Comptabilité & Finance</li>
-                                <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Transport et Logistique</li>
-                                <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Gestion des R.H. (GRH)</li>
-                                <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Technologies de l'Info</li>
-                                <li class="col-12"><i class="bi bi-check-circle-fill me-2"></i>Capacité Individuelle & Dév. Personnel</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stage / Emploi Banner -->
-            <div class="cta-banner" id="stage-emploi">
-                <div class="row align-items-center">
-                    <div class="col-lg-8 text-lg-start mb-3 mb-lg-0">
-                        <span class="badge bg-danger mb-2 text-white">Stage / Emploi / Insertion</span>
-                        <h3 class="cta-title mb-1">Accompagnement à l'Insertion Professionnelle</h3>
-                        <p class="cta-text mb-0">
-                            Grâce à notre Cabinet EICG et notre réseau solide d'entreprises partenaires, nous accompagnons activement nos étudiants dans l'obtention de stages et d'emplois durables.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a href="#contact" class="btn btn-secondary-custom btn-lg">
-                            <i class="bi bi-send me-2"></i>Soumettre un CV / Postuler
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- ================================================================
-     SECTION EVENEMENT MARQUANT (HERO FOCUS)
-================================================================ -->
-<section class="section-padding bg-light-custom border-top border-bottom" aria-label="Evènement marquant">
-    <div class="container">
-        <div class="row align-items-center g-5">
-            
-            <div class="col-lg-6">
-                <div class="news-img-wrapper rounded-lg shadow-md" style="max-height: 380px;">
-                    <img src="images/womens-day.jpg" alt="Journée Internationale des droits de la femme" class="img-fluid"
-                         style="width:100%; height:380px; object-fit:cover;"
-                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/c00000/ffffff?text=Journ%C3%A9e+des+droits+de+la+femme'">
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <span class="badge bg-danger mb-3 py-2 px-3 text-white" style="letter-spacing:1px;">ÉVÈNEMENT MARQUANT</span>
-                <h2 class="section-title text-start mb-3" style="color: var(--color-primary);">
-                    Journée Internationale des droits de la femme
-                </h2>
-                <p class="about-text fs-5 mb-4" style="color: var(--color-text);">
-                    Le GROUPE EICG aux couleurs de la Journée Internationale des droits de la femme. Rejoignez-nous, et Ensemble cultivons l'Excellence !!!
-                </p>
-                <a href="#actualites" class="btn btn-primary-custom btn-lg">
-                    Voir plus <i class="bi bi-chevron-down ms-2"></i>
-                </a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ================================================================
-     SECTION ACTUALITÉS / ÉVÉNEMENTS
-================================================================ -->
-<section id="actualites" class="section-padding bg-white" aria-labelledby="actu-title">
-    <div class="container">
-
-        <!-- EN-TÊTE DE SECTION -->
-        <div class="section-header text-center mb-5">
-            <span class="section-label">Restez informés</span>
-            <h2 id="actu-title" class="section-title">Actualités & Événements</h2>
-            <div class="section-divider" aria-hidden="true"></div>
-            <p class="section-subtitle">Retrouvez les temps forts et rendez-vous du Groupe EICG.</p>
-        </div>
-
-        <div class="row g-4">
-
-            <!-- Événement 1 : Rentrée Solennelle 2025 -->
-            <div class="col-lg-6">
-                <article class="news-card news-card--large h-100" aria-label="Rentrée Solennelle">
-                    <div class="news-img-wrapper">
-                        <img src="images/rentree2025.jpg" alt="Rentrée solennelle Camex" class="news-img"
-                             onerror="this.onerror=null;this.src='https://placehold.co/600x300/18385f/ffffff?text=Camex+2025'">
-                        <span class="news-category">Rentrée 2025</span>
-                    </div>
-                    <div class="news-body">
-                        <div class="news-meta">
-                            <span><i class="bi bi-calendar3 me-1"></i>08 Février 2025</span>
-                            <span><i class="bi bi-clock me-1"></i>Toute la journée</span>
-                        </div>
-                        <h3 class="news-title">RENTRÉE SOLENNELLE DU CAMEX 2024-2025</h3>
-                        <p class="news-excerpt">
-                            ✨ LE CAMEX – CLUB DES AMIS DE L’EXCELLENCE ✨ Rentrée Solennelle 2025 ! Une nouvelle année commence sous le signe de l’excellence et de l’engagement ! 🔥 Ne manquez pas ce rendez-vous...
-                        </p>
-                        <a href="#" class="news-link">
-                            Continuer la lecture <i class="bi bi-arrow-right ms-1"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- COLONNE ACTUALITÉS SECONDAIRES -->
-            <div class="col-lg-6">
-                <div class="d-flex flex-column gap-4 h-100">
-
-                    <!-- Événement 2 : Rdv de l'Excellence 2022-2023 -->
-                    <article class="news-card news-card--small" aria-label="Lancement RDV Excellence">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-4">
-                                <img src="images/lancement2022.jpg" alt="Camex 2022" class="news-img-small rounded-start"
-                                     onerror="this.onerror=null;this.src='https://placehold.co/200x150/c00000/ffffff?text=Camex'">
-                            </div>
-                            <div class="col-8 ps-3">
-                                <span class="news-category-sm">Conférence</span>
-                                <div class="news-meta mb-1" style="font-size:0.75rem;">
-                                    <span><i class="bi bi-calendar3"></i> 25 Février 2023</span>
-                                </div>
-                                <h4 class="news-title-sm">CEREMONIE DE LANCEMENT DES RENDEZ-VOUS DE L'EXCELLENCE 2022-2023</h4>
-                                <a href="#" class="news-link-sm">Find out more <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Événement 3 : Journée des droits de la femme 12 Mars -->
-                    <article class="news-card news-card--small" aria-label="Journée de la femme 12 Mars">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-4">
-                                <img src="images/womens-day-12.jpg" alt="EICG 12 Mars" class="news-img-small rounded-start"
-                                     onerror="this.onerror=null;this.src='https://placehold.co/200x150/18385f/ffffff?text=Femme+12+Mars'">
-                            </div>
-                            <div class="col-8 ps-3">
-                                <span class="news-category-sm">Droits des Femmes</span>
-                                <div class="news-meta mb-1" style="font-size:0.75rem;">
-                                    <span><i class="bi bi-calendar3"></i> 12 Mars 2022</span>
-                                </div>
-                                <h4 class="news-title-sm">Journée Internationale des droits de la femme</h4>
-                                <p class="news-excerpt-sm" style="font-size:0.75rem;">Le GROUPE EICG aux couleurs de la Journée Internationale des droits de la femme. Ensemble cultivons l'Excellence !!!</p>
-                                <a href="#" class="news-link-sm">Find out more <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Événement 4 : Rdv de l'Excellence 8 Mars -->
-                    <article class="news-card news-card--small" aria-label="Journée de la femme 8 Mars">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-4">
-                                <img src="images/womens-day-8.jpg" alt="EICG 8 Mars" class="news-img-small rounded-start"
-                                     onerror="this.onerror=null;this.src='https://placehold.co/200x150/333333/ffffff?text=Femme+8+Mars'">
-                            </div>
-                            <div class="col-8 ps-3">
-                                <span class="news-category-sm">RDV Excellence</span>
-                                <div class="news-meta mb-1" style="font-size:0.75rem;">
-                                    <span><i class="bi bi-calendar3"></i> 08 Mars 2022</span>
-                                </div>
-                                <h4 class="news-title-sm">Journée Internationale des Droits de la Femme</h4>
-                                <p class="news-excerpt-sm" style="font-size:0.75rem;">Invité spéciale: Mme KOUROUMA Fanta (Présidente de la Commission Régionale du CNDH)...</p>
-                                <a href="#" class="news-link-sm">Continuer la lecture <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- ================================================================
-     SECTION CONTACT
-================================================================ -->
-<section id="contact" class="section-padding bg-light-custom" aria-labelledby="contact-title">
-    <div class="container">
-
-        <!-- EN-TÊTE DE SECTION -->
-        <div class="section-header text-center mb-5">
-            <span class="section-label">Nous joindre</span>
-            <h2 id="contact-title" class="section-title">Pré-inscription & Contact</h2>
-            <div class="section-divider" aria-hidden="true"></div>
-            <p class="section-subtitle">
-                Remplissez notre formulaire de pré-inscription pour rejoindre le Groupe EICG pour l'année académique 2025-2026.
-            </p>
-        </div>
-
-        <div class="row g-5">
-
-            <!-- INFORMATIONS DE CONTACT -->
-            <div class="col-lg-4">
-                <div class="contact-info">
-
-                    <div class="contact-info-item">
-                        <div class="contact-icon" aria-hidden="true">
-                            <i class="bi bi-geo-alt-fill"></i>
-                        </div>
-                        <div class="contact-detail">
-                            <h4>Adresse</h4>
-                            <p>Groupe EICG Campus<br>Kinshasa, République Démocratique du Congo</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-item">
-                        <div class="contact-icon" aria-hidden="true">
-                            <i class="bi bi-telephone-fill"></i>
-                        </div>
-                        <div class="contact-detail">
-                            <h4>Téléphone</h4>
-                            <p>
-                                <a href="tel:+243900000000">+243 900 000 000</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-item">
-                        <div class="contact-icon" aria-hidden="true">
-                            <i class="bi bi-envelope-fill"></i>
-                        </div>
-                        <div class="contact-detail">
-                            <h4>Email</h4>
-                            <p>
-                                <a href="mailto:contact@eicg-edu.com">contact@eicg-edu.com</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="contact-social mt-4">
-                        <h4 class="mb-3">Suivez-nous</h4>
-                        <div class="d-flex gap-3">
-                            <a href="https://fb.com" target="_blank" rel="noopener" class="social-btn" aria-label="Page Facebook">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                            <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-btn" aria-label="Chaîne Youtube">
-                                <i class="bi bi-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- FORMULAIRE DE CONTACT & PRÉ-INSCRIPTION -->
-            <div class="col-lg-8">
-                <div class="contact-form-wrapper">
-                    <h3 class="contact-form-title mb-4">Formulaire de Pré-inscription</h3>
-
-                    <!-- ALERTES -->
-                    <div id="formAlert" class="alert alert-success d-none" role="alert">
-                        <i class="bi bi-check-circle-fill me-2"></i>
-                        Votre demande de pré-inscription a été envoyée avec succès !
-                    </div>
-                    <div id="formError" class="alert alert-danger d-none" role="alert">
-                        <i class="bi bi-exclamation-triangle-fill me-2"></i>
-                        Veuillez remplir tous les champs obligatoires du formulaire.
-                    </div>
-
-                    <form id="contactForm" novalidate aria-label="Formulaire d'inscription">
-                        <div class="row g-3">
-
-                            <!-- Nom -->
-                            <div class="col-sm-6">
-                                <label for="nom" class="form-label">Nom complet <span class="text-danger" aria-hidden="true">*</span></label>
-                                <input type="text" class="form-control custom-input" id="nom"
-                                       name="nom" placeholder="Votre nom complet"
-                                       required aria-required="true">
-                                <div class="invalid-feedback">Le nom est obligatoire.</div>
-                            </div>
-
-                            <!-- Email -->
-                            <div class="col-sm-6">
-                                <label for="email" class="form-label">Adresse email <span class="text-danger" aria-hidden="true">*</span></label>
-                                <input type="email" class="form-control custom-input" id="email"
-                                       name="email" placeholder="votre@email.com"
-                                       required aria-required="true">
-                                <div class="invalid-feedback">Un email valide est requis.</div>
-                            </div>
-
-                            <!-- Téléphone -->
-                            <div class="col-sm-6">
-                                <label for="telephone" class="form-label">Téléphone <span class="text-danger" aria-hidden="true">*</span></label>
-                                <input type="tel" class="form-control custom-input" id="telephone"
-                                       name="telephone" placeholder="+243 XXX XXX XXX" required aria-required="true">
-                                <div class="invalid-feedback">Le téléphone est requis.</div>
-                            </div>
-
-                            <!-- Cursus Souhaité -->
-                            <div class="col-sm-6">
-                                <label for="objet" class="form-label">Cursus souhaité <span class="text-danger" aria-hidden="true">*</span></label>
-                                <select class="form-select custom-input" id="objet" name="objet"
-                                        required aria-required="true">
-                                    <option value="" disabled selected>Choisir une formation</option>
-                                    <option value="bts">BTS (Brevet de Technicien Supérieur)</option>
-                                    <option value="licence">Licence Professionnelle</option>
-                                    <option value="master">Master Professionnel</option>
-                                    <option value="data-analyst">Certification Data Analyst</option>
-                                    <option value="ama">Certification Administration et Management (AMA)</option>
-                                </select>
-                                <div class="invalid-feedback">Veuillez choisir un cursus.</div>
-                            </div>
-
-                            <!-- Message -->
-                            <div class="col-12">
-                                <label for="message" class="form-label">Notes complémentaires / Motivations</label>
-                                <textarea class="form-control custom-input" id="message"
-                                          name="message" rows="4"
-                                          placeholder="Racontez-nous brièvement votre parcours et vos attentes..."></textarea>
-                            </div>
-
-                            <!-- Consentement -->
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rgpd"
-                                           name="rgpd" required aria-required="true">
-                                    <label class="form-check-label small" for="rgpd">
-                                        J'accepte que mes données soient traitées conformément à la politique de gestion des inscriptions EICG. <span class="text-danger" aria-hidden="true">*</span>
-                                    </label>
-                                    <div class="invalid-feedback">Vous devez accepter le traitement de vos données pour valider.</div>
-                                </div>
-                            </div>
-
-                            <!-- BOUTON ENVOI -->
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-secondary-custom btn-lg w-100" id="submitBtn">
-                                    <span class="btn-text">
-                                        <i class="bi bi-pencil-square me-2"></i>Valider ma Pré-inscription
-                                    </span>
-                                    <span class="btn-loading d-none">
-                                        <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-                                        Enregistrement...
-                                    </span>
-                                </button>
-                            </div>
-
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ================================================================
-     FOOTER
-================================================================ -->
-<footer id="footer" class="footer" role="contentinfo">
-
-    <!-- CONTENU PRINCIPAL DU FOOTER -->
-    <div class="footer-main">
-        <div class="container">
-            <div class="row g-5">
-
-                <!-- COLONNE 1 : À PROPOS -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-brand d-flex align-items-center gap-3 mb-3">
-                        <div class="logo-circle logo-circle--sm" aria-hidden="true">
-                            <span class="logo-initials">E</span>
-                        </div>
-                        <div class="brand-text">
-                            <span class="brand-name">GROUPE EICG</span>
-                            <span class="brand-tagline">Commerce & Gestion</span>
-                        </div>
-                    </div>
-                    <p class="footer-about">
-                        Le Groupe École Internationale de Commerce et de Gestion (EICG) est un établissement privé guidé par la conviction que chaque étudiant peut et doit atteindre son potentiel. 
-                    </p>
-                    <div class="footer-social d-flex gap-3 mt-3">
-                        <a href="https://fb.com" target="_blank" rel="noopener" class="footer-social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="footer-social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                    </div>
-                </div>
-
-                <!-- COLONNE 2 : LIENS RAPIDES -->
-                <div class="col-lg-2 col-md-6">
-                    <h4 class="footer-heading">EICG</h4>
-                    <ul class="footer-links list-unstyled">
-                        <li><a href="#hero"><i class="bi bi-chevron-right me-1"></i>Accueil</a></li>
-                        <li><a href="#about"><i class="bi bi-chevron-right me-1"></i>Qui sommes-nous ?</a></li>
-                        <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Formations</a></li>
-                        <li><a href="#actualites"><i class="bi bi-chevron-right me-1"></i>Actualités</a></li>
-                        <li><a href="#stage-emploi"><i class="bi bi-chevron-right me-1"></i>Stage/Emploi</a></li>
-                        <li><a href="#contact"><i class="bi bi-chevron-right me-1"></i>Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- COLONNE 3 : FORMATIONS -->
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="footer-heading">Formations</h4>
-                    <ul class="footer-links list-unstyled">
-                        <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Brevet de Technicien (BTS)</a></li>
-                        <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Licence Professionnelle</a></li>
-                        <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Master Professionnel</a></li>
-                        <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Certification Data Analyst</a></li>
-                        <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Certification AMA</a></li>
-                    </ul>
-                </div>
-
-                <!-- COLONNE 4 : CONTACT -->
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="footer-heading">Coordonnées</h4>
-                    <ul class="footer-contact list-unstyled">
+            <div class="row align-items-center py-2">
+                <div class="col-md-10">
+                    <ul class="topbar-info list-unstyled d-flex gap-4 mb-0">
                         <li>
-                            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                            <i class="bi bi-telephone-fill me-1"></i>
+                            <span>+243 900 000 000</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill me-1"></i>
+                            <span>contact@eicg-edu.com</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill me-1"></i>
                             <span>Kinshasa, République Démocratique du Congo</span>
                         </li>
-                        <li>
-                            <i class="bi bi-telephone-fill" aria-hidden="true"></i>
-                            <a href="tel:+243900000000">+243 900 000 000</a>
+                    </ul>
+                </div>
+                <div class="col-md-2 text-end">
+                    <ul class="topbar-social list-unstyled d-flex justify-content-end gap-3 mb-0">
+                        <li><a href="https://fb.com" target="_blank" rel="noopener" aria-label="Facebook"><i
+                                    class="bi bi-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><i
+                                    class="bi bi-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================================
+     HEADER & NAVIGATION PRINCIPALE
+================================================================ -->
+    <header id="main-header" class="sticky-top">
+        <nav class="navbar navbar-expand-lg" id="mainNav" aria-label="Navigation principale">
+            <div class="container">
+
+                <!-- LOGO & NOM DE L'ÉCOLE -->
+                <a class="navbar-brand d-flex align-items-center gap-3" href="index.html"
+                    aria-label="Accueil Groupe EICG">
+                    <div class="logo-circle" aria-hidden="true">
+                        <!-- <span class="logo-initials">E</span> -->
+                        <img src="assets/images/logo-eicg.jpg" alt="LOGO">
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">GROUPE EICG</span>
+                        <span class="brand-tagline">Commerce & Gestion</span>
+                    </div>
+                </a>
+
+                <!-- BOUTON MENU MOBILE -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Ouvrir le menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- LIENS DE NAVIGATION -->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#hero">Accueil</a>
                         </li>
-                        <li>
-                            <i class="bi bi-envelope-fill" aria-hidden="true"></i>
-                            <a href="mailto:contact@eicg-edu.com">contact@eicg-edu.com</a>
+
+                        <!-- Dropdown Présentation -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Présentation
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#about">Qui sommes-nous ?</a></li>
+                                <li><a class="dropdown-item" href="#galerie-photo">GALERIE PHOTOS</a></li>
+                                <li><a class="dropdown-item" href="#galerie-video">GALERIE VIDÉOS</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Dropdown Formations -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#formations" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Formations
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#formations">BTS</a></li>
+                                <li><a class="dropdown-item" href="#formations">Licence</a></li>
+                                <li><a class="dropdown-item" href="#formations">Master</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#formations">Certification Data Analyst</a></li>
+                                <li><a class="dropdown-item" href="#formations">Certification Administration et
+                                        Management des Affaires</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#stage-emploi">Stage/Emploi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cabinet">Cabinet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-secondary-custom" href="#contact">
+                                <i class="bi bi-pencil-square me-1"></i>Pré-inscription
+                            </a>
                         </li>
                     </ul>
                 </div>
 
             </div>
+        </nav>
+    </header>
+
+    <!-- ================================================================
+     SECTION HERO – Message d'accueil & Call-to-Action
+================================================================ -->
+    <section id="hero" class="hero-section" aria-label="Bienvenue">
+        <div class="container">
+            <div class="row align-items-center min-vh-hero">
+
+                <!-- CONTENU TEXTE -->
+                <div class="col-lg-7 col-xl-6">
+                    <div class="hero-content">
+                        <span class="hero-badge">Année académique 2025-2026</span>
+                        <h1 class="hero-title">
+                            Groupe EICG <br>
+                            <span class="text-accent"
+                                style="font-size: 0.65em; font-weight: 600; display: block; margin-top: 5px;">
+                                ECOLE INTERNATIONALE DE COMMERCE ET DE GESTION
+                            </span>
+                        </h1>
+                        <p class="hero-description">
+                            Le Groupe EICG est ravi de vous accueillir et de vous accompagner dans cette nouvelle étape
+                            de votre vie académique.
+                        </p>
+                        <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
+                            <a href="#contact" class="btn btn-secondary-custom btn-lg">
+                                <i class="bi bi-pencil-square me-2"></i>Pré-inscription ici
+                            </a>
+                            <a href="#formations" class="btn btn-outline-custom btn-lg">
+                                <i class="bi bi-book-fill me-2"></i>Nos Formations
+                            </a>
+                        </div>
+
+                        <!-- RÉSEAUX SOCIAUX VISIBLES SUR MOBILE/HERO -->
+                        <div class="d-lg-none mt-4">
+                            <a href="https://fb.com" target="_blank" rel="noopener"
+                                class="btn btn-outline-primary-custom btn-sm me-2">
+                                <i class="bi bi-facebook me-1"></i>Facebook
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                                class="btn btn-outline-primary-custom btn-sm">
+                                <i class="bi bi-youtube me-1"></i>Youtube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IMAGE / VISUEL HERO -->
+                <div class="col-lg-5 col-xl-6 d-none d-lg-flex justify-content-end">
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="hero-img-wrapper">
+                            <!-- Visuel Licence / Master -->
+                            <img src="https://groupe-eicg.com/wp-content/uploads/2025/02/cropped-EICG-2025-copie.png"
+                                alt="GROUPE EICG 2025">
+                            <!-- <img src="images/licencemaster.jpg" alt="Licence et Master EICG" class="hero-img"
+                             onerror="this.onerror=null;this.src='https://placehold.co/520x420/18385f/ffffff?text=VISUEL+Licence+Master'"> -->
+                        </div>
+                        <!-- BADGE FLOTTANT -->
+                        <div class="floating-badge">
+                            <i class="bi bi-award-fill"></i>
+                            <div>
+                                <strong>Culture de l'excellence</strong>
+                                <small>Groupe EICG 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
+
+    <!-- ================================================================
+     SECTION DES TROIS VALEURS CARDINALES
+================================================================ -->
+    <section class="py-5 bg-white border-bottom">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Rigueur -->
+                <div class="col-md-4">
+                    <div class="value-item h-100">
+                        <div class="value-icon"><i class="bi bi-stopwatch"></i></div>
+                        <div>
+                            <strong style="font-size: 1.15rem; color: var(--color-primary);">Rigueur</strong>
+                            <p class="mb-0 small text-muted mt-1">
+                                Nous garantisons cette qualité professionnelle la plus appréciée en entreprise. "faire
+                                ce que l'on dit, et dire ce que l'on fait".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travail -->
+                <div class="col-md-4">
+                    <div class="value-item h-100">
+                        <div class="value-icon"><i class="bi bi-person-workspace"></i></div>
+                        <div>
+                            <strong style="font-size: 1.15rem; color: var(--color-primary);">Travail</strong>
+                            <p class="mb-0 small text-muted mt-1">
+                                Garant d'une reconnaissance, qu'elle soit personnelle ou professionnelle. Nous valorise
+                                et participe à notre plein épanouissement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Excellence -->
+                <div class="col-md-4">
+                    <div class="value-item h-100">
+                        <div class="value-icon"><i class="bi bi-award-fill"></i></div>
+                        <div>
+                            <strong style="font-size: 1.15rem; color: var(--color-primary);">Excellence</strong>
+                            <p class="mb-0 small text-muted mt-1">
+                                Pour être excellent, il faut donc être meilleur que les autres dans l'organisation de
+                                ses objectifs à atteindre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+     SECTION À PROPOS / PRÉSENTATION
+================================================================ -->
+    <section id="about" class="section-padding bg-light-custom" aria-labelledby="about-title">
+        <div class="container">
+
+            <!-- EN-TÊTE DE SECTION -->
+            <div class="section-header text-center mb-5">
+                <span class="section-label">Qui sommes-nous ?</span>
+                <h2 id="about-title" class="section-title">Notre Vision & Mission</h2>
+                <div class="section-divider" aria-hidden="true"></div>
+            </div>
+
+            <div class="row align-items-center g-5">
+
+                <!-- IMAGE À PROPOS -->
+                <div class="col-lg-5">
+                    <div class="about-img-wrapper position-relative">
+                        <img src="assets/images/about.jpg" alt="Présentation EICG"
+                            class="img-fluid rounded-lg about-main-img">
+                        <div class="about-badge-card">
+                            <div class="about-badge-icon">
+                                <i class="bi bi-mortarboard-fill"></i>
+                            </div>
+                            <div>
+                                <strong>Excellence</strong>
+                                <small>Groupe EICG</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TEXTE À PROPOS -->
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <h3 class="about-subtitle" style="color: var(--color-secondary);">
+                            <i class="bi bi-eye-fill me-2"></i>Notre Vision
+                        </h3>
+                        <p class="about-text" style="font-weight: 600; color: var(--color-primary);">
+                            Agir pour développer la culture de l'excellence.
+                        </p>
+                        <p class="about-text">
+                            Le Groupe École Internationale de Commerce et de Gestion est une école privée avec un
+                            programme national et international guidé par la conviction que chaque étudiant peut et doit
+                            atteindre son potentiel. Nous nous efforçons d'aider chaque étudiant à devenir un citoyen du
+                            monde actif, intelligent et Smart.
+                        </p>
+
+                        <h3 class="about-subtitle mt-4" style="color: var(--color-primary);">
+                            <i class="bi bi-rocket-takeoff-fill me-2"></i>Notre Mission
+                        </h3>
+                        <p class="about-text">
+                            Transmettre aux jeunes générations le savoir et le savoir-faire susceptible de leur garantir
+                            une vie professionnelle et sociale harmonieuse.
+                        </p>
+
+                        <!-- BOUTONS GALERIES -->
+                        <div class="d-flex flex-wrap gap-3 mt-4" id="galerie-photo">
+                            <a href="#galerie-photo" class="btn btn-primary-custom">
+                                <i class="bi bi-images me-2"></i>Galerie Photos
+                            </a>
+                            <a href="#galerie-video" class="btn btn-outline-custom" id="galerie-video">
+                                <i class="bi bi-play-btn-fill me-2"></i>Galerie Vidéos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+     SECTION FORMATIONS / PROGRAMMES
+================================================================ -->
+    <section id="formations" class="section-padding bg-white" aria-labelledby="prog-title">
+        <div class="container">
+
+            <!-- EN-TÊTE DE SECTION -->
+            <div class="section-header text-center mb-5">
+                <span class="section-label">Nos Formations</span>
+                <h2 id="prog-title" class="section-title">Programmes & Cursus Professionnels</h2>
+                <div class="section-divider" aria-hidden="true"></div>
+                <p class="section-subtitle">
+                    Des parcours diplômants et des certifications d'excellence pour propulser votre carrière.
+                </p>
+            </div>
+
+            <!-- CARTES FORMATIONS -->
+            <div class="row g-4">
+
+                <!-- Cursus BTS -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="prog-card h-100" aria-label="Programme BTS">
+                        <div class="prog-card-icon">
+                            <i class="bi bi-journal-bookmark-fill"></i>
+                        </div>
+                        <h3 class="prog-card-title">BTS</h3>
+                        <p class="prog-card-text">
+                            Brevet de Technicien Supérieur. Une formation académique et technique solide en 2 ans pour
+                            intégrer rapidement le marché du travail ou poursuivre en Licence.
+                        </p>
+
+                        <ul class="prog-features list-unstyled mb-4">
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Commerce & Vente</li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Gestion d'Entreprise</li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Mises en situations réelles</li>
+                        </ul>
+                        <a href="#contact" class="prog-link">
+                            s'inscrire ici <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- Cursus Licence -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="prog-card prog-card--featured h-100" aria-label="Licence Professionnelle">
+                        <div class="prog-card-badge">Inscription</div>
+                        <div class="prog-card-icon">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </div>
+                        <h3 class="prog-card-title">Licence Professionnelle</h3>
+                        <p class="prog-card-text">
+                            La licence professionnelle est conçue pour compléter et enrichir le parcours des étudiants
+                            titulaires d’un Bac +2 en leur offrant une spécialisation adaptée aux besoins du marché...
+                        </p>
+                        <ul class="prog-features list-unstyled mb-4">
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Management et Gestion</li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Marketing & Communication</li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Projets collectifs & Stages</li>
+                        </ul>
+                        <a href="#contact" class="prog-link ">
+                            s'inscrire ici <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- Cursus Master -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="prog-card h-100" aria-label="Master Pro">
+                        <div class="prog-card-icon">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </div>
+                        <h3 class="prog-card-title">Master Pro</h3>
+                        <p class="prog-card-text">
+                            Une formation professionnelle avec beaucoup de mises en situations et de projets collectifs,
+                            des interventions d’entreprise au cœur des cours, le master « pro » joue tout son rôle et
+                            offre de bonnes perspectives d’insertion et d’évolution professionnelle.
+                        </p>
+                        <ul class="prog-features list-unstyled mb-4">
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Interventions d'experts</li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Mises en situation réelles</li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Projets collectifs</li>
+                        </ul>
+                        <a href="#contact" class="prog-link">
+                            s'inscrire ici <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </article>
+                </div>
+
+
+                <div class="col-md-6 col-lg-6">
+
+                    <article class="prog-card h-100" aria-label="Certification Data Analyst">
+
+                        <!-- Image -->
+                        <div class="prog-card-media">
+                            <img src="assets/images/data-analyst.gif" alt="Formation Data Analyst"
+                                class="prog-card-img">
+                        </div>
+
+                        <!-- Contenu -->
+                        <div class="prog-card-body">
+                            <span class="text-accent small fw-bold uppercase">
+                                CERTIFICATION
+                            </span>
+
+                            <h3 class="prog-card-title mt-1">
+                                Data Analyst
+                            </h3>
+
+                            <p class="prog-card-text">
+                                Maîtrisez l’analyse de données en un temps record avec
+                                l’accompagnement de nos spécialistes du domaine.
+                                Devenez un expert recherché en entreprise.
+                            </p>
+
+                            <ul class="prog-features list-unstyled">
+                                <li>
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    Visualisation de données
+                                </li>
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    Statistiques & Décisions
+                                </li>
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    Accompagnement par des experts
+                                </li>
+                            </ul>
+
+                            <a href="#contact" class="btn btn-primary-custom btn-sm prog-btn">
+                                S'inscrire Data Analyst
+                                <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- Certification Administration et Management -->
+                <div class="col-md-6 col-lg-6">
+
+                    <article class="prog-card h-100"
+                        aria-label="Certification Administration et Management des Affaires">
+
+                        <!-- Image -->
+                        <div class="prog-card-media">
+                            <img src="assets/images/management.png" alt="Formation Administration et Management"
+                                class="prog-card-img">
+                        </div>
+
+                        <!-- Body -->
+                        <div class="prog-card-body">
+
+                            <!-- Icon -->
+                            <div class="prog-card-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+
+                            <!-- Badge -->
+                            <span class="text-accent small fw-bold uppercase">
+                                CERTIFICATION
+                            </span>
+
+                            <!-- Title -->
+                            <h3 class="prog-card-title mt-1">
+                                Gestionnaire et Directeur (AMA)
+                            </h3>
+
+                            <!-- Text -->
+                            <p class="prog-card-text">
+                                Cette certification permet de développer des compétences
+                                clés pour gérer efficacement une entreprise et vous prépare
+                                à prendre des décisions stratégiques et à assurer la
+                                pérennité de votre activité.
+                            </p>
+
+                            <!-- Features -->
+                            <ul class="prog-features list-unstyled">
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    Décisions stratégiques
+                                </li>
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    Gouvernance d'entreprise
+                                </li>
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    Pilotage de la performance
+                                </li>
+
+                            </ul>
+
+                            <!-- Button -->
+                            <a href="#contact" class="btn btn-primary-custom btn-sm prog-btn">
+
+                                S'inscrire Gestionnaire et Directeur
+
+                                <i class="bi bi-arrow-right ms-1"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+            <!-- STAGE / EMPLOI & CABINET INFORMATION -->
+            <div id="cabinet" class="pt-5 mt-4">
+                <div class="row align-items-center g-5 mb-5">
+                    <div class="col-lg-6">
+                        <span class="section-label">Accompagnement & Performance</span>
+                        <h3 class="section-title text-start mb-3" style="color: var(--color-primary);">
+                            Cabinet EICG – Excellence en Formation Professionnelle Continue
+                        </h3>
+                        <p class="about-text fw-bold text-accent mb-3">
+                            Nos programmes de certification sont reconnus et délivrés par notre cabinet de formation,
+                            accrédité.
+                        </p>
+                        <p class="about-text">
+                            Le Cabinet EICG propose des formations professionnelles continues de qualité, adaptées aux
+                            besoins des entreprises et des particuliers. Nos programmes certifiants et sur mesure visent
+                            à développer les compétences et à accompagner les professionnels dans leur évolution, pour
+                            réussir dans un marché du travail en constante mutation.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#contact" class="btn btn-secondary-custom btn-lg">
+                                <i class="bi bi-telephone-outbound me-2"></i>Nous consulter / S'inscrire
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-info-item h-100 bg-light-custom border-2">
+                            <div class="contact-detail">
+                                <h4 style="font-size: 1.1rem; color: var(--color-primary); margin-bottom: 16px;">
+                                    <i class="bi bi-patch-check-fill text-accent me-2"></i>Nos Domaines d'Intervention &
+                                    Spécialités
+                                </h4>
+                                <ul class="prog-features list-unstyled row g-2">
+                                    <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Droit, Fiscalité
+                                    </li>
+                                    <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Langues Vivantes
+                                    </li>
+                                    <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Management &
+                                        Gestion</li>
+                                    <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Assurance Qualité,
+                                        Normes</li>
+                                    <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Conduite de Projet
+                                    </li>
+                                    <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Commerce & Vente
+                                    </li>
+                                    <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Comptabilité &
+                                        Finance</li>
+                                    <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Transport et
+                                        Logistique</li>
+                                    <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Gestion des R.H.
+                                        (GRH)</li>
+                                    <li class="col-md-6"><i class="bi bi-check-circle-fill me-2"></i>Technologies de
+                                        l'Info</li>
+                                    <li class="col-12"><i class="bi bi-check-circle-fill me-2"></i>Capacité Individuelle
+                                        & Dév. Personnel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage / Emploi Banner -->
+                <div class="cta-banner" id="stage-emploi">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 text-lg-start mb-3 mb-lg-0">
+                            <span class="badge bg-danger mb-2 text-white">Stage / Emploi / Insertion</span>
+                            <h3 class="cta-title mb-1">Accompagnement à l'Insertion Professionnelle</h3>
+                            <p class="cta-text mb-0">
+                                Grâce à notre Cabinet EICG et notre réseau solide d'entreprises partenaires, nous
+                                accompagnons activement nos étudiants dans l'obtention de stages et d'emplois durables.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <a href="#contact" class="btn btn-secondary-custom btn-lg">
+                                <i class="bi bi-send me-2"></i>Soumettre un CV / Postuler
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================================================
+     SECTION EVENEMENT MARQUANT (HERO FOCUS)
+================================================================ -->
+    <section class="section-padding bg-light-custom border-top border-bottom" aria-label="Evènement marquant">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+                    <div class="news-img-wrapper rounded-lg shadow-md" style="max-height: 380px;">
+                        <img src="assets/images/even1.jpg" alt="Journée Internationale des droits de la femme"
+                            class="img-fluid" style="width:100%; height:380px; object-fit:cover;"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/c00000/ffffff?text=Journ%C3%A9e+des+droits+de+la+femme'">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <span class="badge bg-danger mb-3 py-2 px-3 text-white" style="letter-spacing:1px;">ÉVÈNEMENT
+                        MARQUANT</span>
+                    <h2 class="section-title text-start mb-3" style="color: var(--color-primary);">
+                        Journée Internationale des droits de la femme
+                    </h2>
+                    <p class="about-text fs-5 mb-4" style="color: var(--color-text);">
+                        Le GROUPE EICG aux couleurs de la Journée Internationale des droits de la femme. Rejoignez-nous,
+                        et Ensemble cultivons l'Excellence !!!
+                    </p>
+                    <a href="#actualites" class="btn btn-primary-custom btn-lg">
+                        Voir plus <i class="bi bi-chevron-down ms-2"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+     SECTION ACTUALITÉS / ÉVÉNEMENTS
+================================================================ -->
+   <section id="actualites" class="section-padding bg-white">
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="section-header text-center mb-5">
+            <span class="section-label">Restez informés</span>
+            <h2 class="section-title">Actualités & Événements</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+                Retrouvez les temps forts et rendez-vous du Groupe EICG.
+            </p>
+        </div>
+
+        <!-- SLIDER -->
+        <div class="swiper newsSwiper">
+
+            <div class="swiper-wrapper">
+
+                <!-- ITEM1 -->
+                <div class="swiper-slide">
+
+                    <article class="news-card">
+
+                        <div class="news-img">
+                            <img src="assets/images/even1.jpg" alt="Excellence 2022">
+                            <span class="news-badge">Conférence</span>
+                        </div>
+
+                        <div class="news-body">
+
+                            <div class="news-meta">
+                                <span><i class="bi bi-calendar3"></i> 25 Février 2023</span>
+                            </div>
+
+                            <h3 class="news-title">
+                                Lancement des Rendez-vous de l’Excellence
+                            </h3>
+
+                            <p class="news-text">
+                                Cérémonie officielle marquant le début du programme
+                                d’excellence académique.
+                            </p>
+
+                            <a href="#" class="news-link">
+                                Find out more <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+                <!-- ITEM 2-->
+                <div class="swiper-slide">
+
+                    <article class="news-card">
+
+                        <div class="news-img">
+                            <img src="assets/images/event2.png" alt="Excellence 2022">
+                            <span class="news-badge">Conférence</span>
+                        </div>
+
+                        <div class="news-body">
+
+                            <div class="news-meta">
+                                <span><i class="bi bi-calendar3"></i> 25 Février 2023</span>
+                            </div>
+
+                            <h3 class="news-title">
+                                Lancement des Rendez-vous de l’Excellence
+                            </h3>
+
+                            <p class="news-text">
+                                Cérémonie officielle marquant le début du programme
+                                d’excellence académique.
+                            </p>
+
+                            <a href="#" class="news-link">
+                                Find out more <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+                <!-- ITEM 3-->
+                <div class="swiper-slide">
+
+                    <article class="news-card">
+
+                        <div class="news-img">
+                            <img src="assets/images/even3.jpg" alt="Excellence 2022">
+                            <span class="news-badge">Conférence</span>
+                        </div>
+
+                        <div class="news-body">
+
+                            <div class="news-meta">
+                                <span><i class="bi bi-calendar3"></i> 25 Février 2023</span>
+                            </div>
+
+                            <h3 class="news-title">
+                                Lancement des Rendez-vous de l’Excellence
+                            </h3>
+
+                            <p class="news-text">
+                                Cérémonie officielle marquant le début du programme
+                                d’excellence académique.
+                            </p>
+
+                            <a href="#" class="news-link">
+                                Find out more <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+                <!-- ITEM 4-->
+                <div class="swiper-slide">
+
+                    <article class="news-card">
+
+                        <div class="news-img">
+                            <img src="assets/images/even4.jpg" alt="Journée de la femme">
+                            <span class="news-badge">Social</span>
+                        </div>
+
+                        <div class="news-body">
+
+                            <div class="news-meta">
+                                <span><i class="bi bi-calendar3"></i> 12 Mars 2022</span>
+                            </div>
+
+                            <h3 class="news-title">
+                                Journée Internationale des Droits de la Femme
+                            </h3>
+
+                            <p class="news-text">
+                                Le GROUPE EICG célèbre les femmes dans un esprit
+                                d’excellence et de leadership.
+                            </p>
+
+                            <a href="#" class="news-link">
+                                En savoir plus <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+            <!-- NAVIGATION -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- PAGINATION -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+
     </div>
 
-    <!-- BARRE DU BAS DU FOOTER -->
-    <div class="footer-bottom">
+</section>
+
+    <!-- ================================================================
+     SECTION CONTACT
+================================================================ -->
+    <section id="contact" class="section-padding bg-light-custom" aria-labelledby="contact-title">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0 small">
-                        &copy; <span id="currentYear"></span> Groupe EICG – Tous droits réservés.
-                    </p>
+
+            <!-- EN-TÊTE DE SECTION -->
+            <div class="section-header text-center mb-5">
+                <span class="section-label">Nous joindre</span>
+                <h2 id="contact-title" class="section-title">Pré-inscription & Contact</h2>
+                <div class="section-divider" aria-hidden="true"></div>
+                <p class="section-subtitle">
+                    Remplissez notre formulaire de pré-inscription pour rejoindre le Groupe EICG pour l'année académique
+                    2025-2026.
+                </p>
+            </div>
+
+            <div class="row g-5">
+
+                <!-- INFORMATIONS DE CONTACT -->
+                <div class="col-lg-4">
+                    <div class="contact-info">
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>Adresse</h4>
+                                <p>Groupe EICG Campus<br>Kinshasa, République Démocratique du Congo</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>Téléphone</h4>
+                                <p>
+                                    <a href="tel:+243900000000">+243 900 000 000</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>Email</h4>
+                                <p>
+                                    <a href="mailto:contact@eicg-edu.com">contact@eicg-edu.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-social mt-4">
+                            <h4 class="mb-3">Suivez-nous</h4>
+                            <div class="d-flex gap-3">
+                                <a href="https://fb.com" target="_blank" rel="noopener" class="social-btn"
+                                    aria-label="Page Facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-btn"
+                                    aria-label="Chaîne Youtube">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-                    <p class="mb-0 small text-white-50">
-                        Fièrement propulsé par WordPress | Edubin Educational Institute.
-                    </p>
+
+                <!-- FORMULAIRE DE CONTACT & PRÉ-INSCRIPTION -->
+                <div class="col-lg-8">
+                    <div class="contact-form-wrapper">
+                        <h3 class="contact-form-title mb-4">Formulaire de Pré-inscription</h3>
+
+                        <!-- ALERTES -->
+                        <div id="formAlert" class="alert alert-success d-none" role="alert">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            Votre demande de pré-inscription a été envoyée avec succès !
+                        </div>
+                        <div id="formError" class="alert alert-danger d-none" role="alert">
+                            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                            Veuillez remplir tous les champs obligatoires du formulaire.
+                        </div>
+
+                        <form id="contactForm" novalidate aria-label="Formulaire d'inscription">
+                            <div class="row g-3">
+
+                                <!-- Nom -->
+                                <div class="col-sm-6">
+                                    <label for="nom" class="form-label">Nom complet <span class="text-danger"
+                                            aria-hidden="true">*</span></label>
+                                    <input type="text" class="form-control custom-input" id="nom" name="nom"
+                                        placeholder="Votre nom complet" required aria-required="true">
+                                    <div class="invalid-feedback">Le nom est obligatoire.</div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="col-sm-6">
+                                    <label for="email" class="form-label">Adresse email <span class="text-danger"
+                                            aria-hidden="true">*</span></label>
+                                    <input type="email" class="form-control custom-input" id="email" name="email"
+                                        placeholder="votre@email.com" required aria-required="true">
+                                    <div class="invalid-feedback">Un email valide est requis.</div>
+                                </div>
+
+                                <!-- Téléphone -->
+                                <div class="col-sm-6">
+                                    <label for="telephone" class="form-label">Téléphone <span class="text-danger"
+                                            aria-hidden="true">*</span></label>
+                                    <input type="tel" class="form-control custom-input" id="telephone" name="telephone"
+                                        placeholder="+243 XXX XXX XXX" required aria-required="true">
+                                    <div class="invalid-feedback">Le téléphone est requis.</div>
+                                </div>
+
+                                <!-- Cursus Souhaité -->
+                                <div class="col-sm-6">
+                                    <label for="objet" class="form-label">Cursus souhaité <span class="text-danger"
+                                            aria-hidden="true">*</span></label>
+                                    <select class="form-select custom-input" id="objet" name="objet" required
+                                        aria-required="true">
+                                        <option value="" disabled selected>Choisir une formation</option>
+                                        <option value="bts">BTS (Brevet de Technicien Supérieur)</option>
+                                        <option value="licence">Licence Professionnelle</option>
+                                        <option value="master">Master Professionnel</option>
+                                        <option value="data-analyst">Certification Data Analyst</option>
+                                        <option value="ama">Certification Administration et Management (AMA)</option>
+                                    </select>
+                                    <div class="invalid-feedback">Veuillez choisir un cursus.</div>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Notes complémentaires / Motivations</label>
+                                    <textarea class="form-control custom-input" id="message" name="message" rows="4"
+                                        placeholder="Racontez-nous brièvement votre parcours et vos attentes..."></textarea>
+                                </div>
+
+                                <!-- Consentement -->
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rgpd" name="rgpd" required
+                                            aria-required="true">
+                                        <label class="form-check-label small" for="rgpd">
+                                            J'accepte que mes données soient traitées conformément à la politique de
+                                            gestion des inscriptions EICG. <span class="text-danger"
+                                                aria-hidden="true">*</span>
+                                        </label>
+                                        <div class="invalid-feedback">Vous devez accepter le traitement de vos données
+                                            pour valider.</div>
+                                    </div>
+                                </div>
+
+                                <!-- BOUTON ENVOI -->
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-secondary-custom btn-lg w-100" id="submitBtn">
+                                        <span class="btn-text">
+                                            <i class="bi bi-pencil-square me-2"></i>Valider ma Pré-inscription
+                                        </span>
+                                        <span class="btn-loading d-none">
+                                            <span class="spinner-border spinner-border-sm me-2" role="status"
+                                                aria-hidden="true"></span>
+                                            Enregistrement...
+                                        </span>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+     FOOTER
+================================================================ -->
+    <footer id="footer" class="footer" role="contentinfo">
+
+        <!-- CONTENU PRINCIPAL DU FOOTER -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="row g-5">
+
+                    <!-- COLONNE 1 : À PROPOS -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-brand d-flex align-items-center gap-3 mb-3">
+                            <div class="logo-circle logo-circle--sm" aria-hidden="true">
+                                <span class="logo-initials">E</span>
+                            </div>
+                            <div class="brand-text">
+                                <span class="brand-name">GROUPE EICG</span>
+                                <span class="brand-tagline">Commerce & Gestion</span>
+                            </div>
+                        </div>
+                        <p class="footer-about">
+                            Le Groupe École Internationale de Commerce et de Gestion (EICG) est un établissement privé
+                            guidé par la conviction que chaque étudiant peut et doit atteindre son potentiel.
+                        </p>
+                        <div class="footer-social d-flex gap-3 mt-3">
+                            <a href="https://fb.com" target="_blank" rel="noopener" class="footer-social-link"
+                                aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="footer-social-link"
+                                aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- COLONNE 2 : LIENS RAPIDES -->
+                    <div class="col-lg-2 col-md-6">
+                        <h4 class="footer-heading">EICG</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="#hero"><i class="bi bi-chevron-right me-1"></i>Accueil</a></li>
+                            <li><a href="#about"><i class="bi bi-chevron-right me-1"></i>Qui sommes-nous ?</a></li>
+                            <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Formations</a></li>
+                            <li><a href="#actualites"><i class="bi bi-chevron-right me-1"></i>Actualités</a></li>
+                            <li><a href="#stage-emploi"><i class="bi bi-chevron-right me-1"></i>Stage/Emploi</a></li>
+                            <li><a href="#contact"><i class="bi bi-chevron-right me-1"></i>Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- COLONNE 3 : FORMATIONS -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="footer-heading">Formations</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Brevet de Technicien
+                                    (BTS)</a></li>
+                            <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Licence
+                                    Professionnelle</a></li>
+                            <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Master Professionnel</a>
+                            </li>
+                            <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Certification Data
+                                    Analyst</a></li>
+                            <li><a href="#formations"><i class="bi bi-chevron-right me-1"></i>Certification AMA</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- COLONNE 4 : CONTACT -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="footer-heading">Coordonnées</h4>
+                        <ul class="footer-contact list-unstyled">
+                            <li>
+                                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                                <span>Kinshasa, République Démocratique du Congo</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                                <a href="tel:+243900000000">+243 900 000 000</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                                <a href="mailto:contact@eicg-edu.com">contact@eicg-edu.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
 
-</footer>
+        <!-- BARRE DU BAS DU FOOTER -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0 small">
+                            &copy; <span id="currentYear"></span> Groupe EICG – Tous droits réservés.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                        <p class="mb-0 small text-white-50">
+                            Fièrement propulsé par WordPress | Edubin Educational Institute.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<!-- ================================================================
+    </footer>
+
+    <!-- ================================================================
      BOUTON RETOUR EN HAUT
 ================================================================ -->
-<button id="backToTop" class="back-to-top" aria-label="Retour en haut de page" title="Retour en haut">
-    <i class="bi bi-arrow-up" aria-hidden="true"></i>
-</button>
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut de page" title="Retour en haut">
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
 
-<!-- ================================================================
+    <!-- ================================================================
      SCRIPTS – Bootstrap 5.3, jQuery 3.7, Script personnalisé
 ================================================================ -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

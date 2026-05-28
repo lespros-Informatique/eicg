@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- ============================================================
+         META & SEO
+    ============================================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Groupe EICG – École Internationale de Commerce et de Gestion. Agir pour développer la culture de l'excellence.">
+    <meta name="keywords" content="Groupe EICG, EICG, commerce, gestion, BTS, Licence, Master, Data Analyst, école Kinshasa">
+    <meta name="author" content="Groupe EICG">
+    <title>À PROPOS | GROUPE EICG | École Internationale de Commerce et de Gestion</title>
+
+    <!-- ============================================================
+         GOOGLE FONTS – Poppins
+    ============================================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ============================================================
+         BOOTSTRAP 5.3 (CDN)
+    ============================================================ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- ============================================================
+         BOOTSTRAP ICONS
+    ============================================================ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- ============================================================
+         CSS PERSONNALISÉ
+    ============================================================ -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Skip to content for Accessibility -->
+<a href="#main-content" class="skip-to-content">Aller au contenu principal</a>
+
+<!-- ================================================================
+     BARRE D'INFORMATION SUPÉRIEURE (Top Bar)
+==================================================================================== -->
+<div class="topbar d-none d-lg-block">
+    <div class="container">
+        <div class="row align-items-center py-2">
+            <div class="col-md-10">
+                <ul class="topbar-info list-unstyled d-flex gap-4 mb-0">
+                    <li>
+                        <i class="bi bi-telephone-fill me-1"></i>
+                        <span>+243 900 000 000</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope-fill me-1"></i>
+                        <span>contact@eicg-edu.com</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-geo-alt-fill me-1"></i>
+                        <span>Kinshasa, République Démocratique du Congo</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 text-end">
+                <ul class="topbar-social list-unstyled d-flex justify-content-end gap-3 mb-0">
+                    <li><a href="https://fb.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================
+     HEADER & NAVIGATION PRINCIPALE
+==================================================================================== -->
+<header id="main-header" class="sticky-top">
+    <nav class="navbar navbar-expand-lg" id="mainNav" aria-label="Navigation principale">
+        <div class="container">
+
+            <!-- LOGO & NOM DE L'ÉCOLE -->
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html" aria-label="Accueil Groupe EICG">
+                <div class="logo-circle" aria-hidden="true">
+                    <img src="assets/images/logo-eicg.jpg" alt="LOGO EICG">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">GROUPE EICG</span>
+                    <span class="brand-tagline">Commerce & Gestion</span>
+                </div>
+            </a>
+
+            <!-- BOUTON MENU MOBILE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarMain" aria-controls="navbarMain"
+                    aria-expanded="false" aria-label="Ouvrir le menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- LIENS DE NAVIGATION -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    
+                    <!-- Dropdown Présentation -->
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Présentation
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="about.html">Qui sommes-nous ?</a></li>
+                            <li><a class="dropdown-item" href="#galerie-photo">GALERIE PHOTOS</a></li>
+                            <li><a class="dropdown-item" href="#galerie-video">GALERIE VIDÉOS</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown Formations -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#formations" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Formations
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#formations">BTS</a></li>
+                            <li><a class="dropdown-item" href="#formations">Licence</a></li>
+                            <li><a class="dropdown-item" href="#formations">Master</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#formations">Certification Data Analyst</a></li>
+                            <li><a class="dropdown-item" href="#formations">Certification Administration et Management des Affaires</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stage-emploi">Stage/Emploi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cabinet">Cabinet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-secondary-custom" href="#contact">
+                            <i class="bi bi-pencil-square me-1"></i>Pré-inscription
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<main id="main-content">
+    <!-- ================================================================
+         SECTION À PROPOS / PRÉSENTATION DÉTAILLÉE
+    ================================================================ -->
+    <section id="about-details" class="section-padding bg-light-custom" aria-labelledby="about-details-title">
+        <div class="container">
+
+            <!-- EN-TÊTE DE SECTION -->
+            <div class="section-header text-center mb-5">
+                <span class="section-label">Qui sommes-nous ?</span>
+                <h2 id="about-details-title" class="section-title">Groupe Ecole Internationale de Commerce et de Gestion (GPE EICG)</h2>
+                <div class="section-divider" aria-hidden="true"></div>
+            </div>
+
+            <div class="row align-items-center g-5 mb-5">
+
+                <!-- IMAGE À PROPOS -->
+                <div class="col-lg-5">
+                    <div class="about-img-wrapper position-relative">
+                        <img src="images/about-eicg.jpg" alt="Présentation EICG"
+                             class="img-fluid rounded-lg about-main-img"
+                             onerror="this.onerror=null;this.src='https://placehold.co/500x400/18385f/ffffff?text=GPE+EICG'">
+                        <!-- CARTE SUPERPOSÉE -->
+                        <div class="about-badge-card">
+                            <div class="about-badge-icon">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <div>
+                                <strong>Étabilité Professionnelle</strong>
+                                <small>Agréé par l'État</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TEXTE À PROPOS -->
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <h3 class="about-subtitle" style="color: var(--color-secondary);">
+                            <i class="bi bi-building me-2"></i>Notre Identité
+                        </h3>
+                        <p class="about-text" style="font-weight: 600; color: var(--color-primary);">
+                            Le Groupe Ecole Internationale de Commerce et de Gestion (GPE EICG) est une école d’enseignement supérieur professionnelle de type BTS agréée par l’État sous le numéro : N° 489/MESRS/DGESIP/DESUP/kkj 17AVR 2019.
+                        </p>
+                        <p class="about-text">
+                            En plus du BTS, nous formons à l’obtention des diplômes en Licence et Master Professionnels.
+                        </p>
+
+                        <h3 class="about-subtitle mt-4" style="color: var(--color-primary);">
+                            <i class="bi bi-rocket-takeoff-fill me-2"></i>Notre Vision
+                        </h3>
+                        <p class="about-text" style="font-weight: 600; color: var(--color-primary);">
+                            Agir pour développer la culture de l’excellence.
+                        </h3>
+                        <p class="about-text">
+                            Rejoignez-nous et ensemble cultivons l’excellence.
+                        </p>
+
+                        <h3 class="about-subtitle mt-4" style="color: var(--color-primary);">
+                            <i class="bi bi-person-check-fill me-2"></i>Notre Mission
+                        </h3>
+                        <p class="about-text">
+                            Transmettre aux jeunes générations le savoir et le savoir-faire susceptibles de leur garantir une vie professionnelle et sociale réussie.
+                        </p>
+
+                        <h3 class="about-subtitle mt-4" style="color: var(--color-primary);">
+                            <i class="bi bi-list-task me-2"></i>Nos Valeurs Cardinales
+                        </h3>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="value-item h-100">
+                                    <div class="value-icon"><i class="bi bi-stopwatch"></i></div>
+                                    <div>
+                                        <strong style="font-size: 1.15rem; color: var(--color-primary);">Rigueur</strong>
+                                        <p class="mb-0 small text-muted mt-1">
+                                            Nous garantissons cette qualité professionnelle la plus appréciée en entreprise. "faire ce que l'on dit, et dire ce que l'on fait".
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="value-item h-100">
+                                    <div class="value-icon"><i class="bi bi-person-workspace"></i></div>
+                                    <div>
+                                        <strong style="font-size: 1.15rem; color: var(--color-primary);">Travail</strong>
+                                        <p class="mb-0 small text-muted mt-1">
+                                            Garant d'une reconnaissance, qu'elle soit personnelle ou professionnelle. Nous valorise et participe à notre plein épanouissement.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="value-item h-100">
+                                    <div class="value-icon"><i class="bi bi-award-fill"></i></div>
+                                    <div>
+                                        <strong style="font-size: 1.15rem; color: var(--color-primary);">Excellence</strong>
+                                        <p class="mb-0 small text-muted mt-1">
+                                            Pour être excellent, il faut donc être meilleur que les autres dans l'organisation de ses objectifs à atteindre.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BOUTONS D'ACTION -->
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="index.html#formations" class="btn btn-primary-custom">
+                                <i class="bi bi-book me-2"></i>Nos Formations
+                            </a>
+                            <a href="index.html#contact" class="btn btn-outline-custom">
+                                <i class="bi bi-pencil-square me-2"></i>Pré-inscription
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ================================================================
+     FOOTER
+==================================================================================== -->
+<footer id="footer" class="footer" role="contentinfo">
+
+    <!-- CONTENU PRINCIPAL DU FOOTER -->
+    <div class="footer-main">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- COLONNE 1 : À PROPOS -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand d-flex align-items-center gap-3 mb-3">
+                        <div class="logo-circle logo-circle--sm" aria-hidden="true">
+                            <span class="logo-initials">E</span>
+                        </div>
+                        <div class="brand-text">
+                            <span class="brand-name">GROUPE EICG</span>
+                            <span class="brand-tagline">Commerce & Gestion</span>
+                        </div>
+                    </div>
+                    <p class="footer-about">
+                        Le Groupe École Internationale de Commerce et de Gestion (EICG) est un établissement privé guidé par la conviction que chaque étudiant peut et doit atteindre son potentiel. 
+                    </p>
+                    <div class="footer-social d-flex gap-3 mt-3">
+                        <a href="https://fb.com" target="_blank" rel="noopener" class="footer-social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="footer-social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- COLONNE 2 : LIENS RAPIDES -->
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-heading">EICG</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="index.html"><i class="bi bi-chevron-right me-1"></i>Accueil</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-right me-1"></i>Qui sommes-nous ?</a></li>
+                        <li><a href="index.html#formations"><i class="bi bi-chevron-right me-1"></i>Formations</a></li>
+                        <li><a href="index.html#actualites"><i class="bi bi-chevron-right me-1"></i>Actualités</a></li>
+                        <li><a href="index.html#stage-emploi"><i class="bi bi-chevron-right me-1"></i>Stage/Emploi</a></li>
+                        <li><a href="index.html#contact"><i class="bi bi-chevron-right me-1"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- COLONNE 3 : FORMATIONS -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">Formations</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="index.html#formations"><i class="bi bi-chevron-right me-1"></i>Brevet de Technicien (BTS)</a></li>
+                        <li><a href="index.html#formations"><i class="bi bi-chevron-right me-1"></i>Licence Professionnelle</a></li>
+                        <li><a href="index.html#formations"><i class="bi bi-chevron-right me-1"></i>Master Professionnel</a></li>
+                        <li><a href="index.html#formations"><i class="bi bi-chevron-right me-1"></i>Certification Data Analyst</a></li>
+                        <li><a href="index.html#formations"><i class="bi bi-chevron-right me-1"></i>Certification AMA</a></li>
+                    </ul>
+                </div>
+
+                <!-- COLONNE 4 : CONTACT -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">Coordonnées</h4>
+                    <ul class="footer-contact list-unstyled">
+                        <li>
+                            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                            Groupe EICG Campus<br>Kinshasa, République Démocratique du Congo
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                            <a href="tel:+243900000000">+243 900 000 000</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                            <a href="mailto:contact@eicg-edu.com">contact@eicg-edu.com</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="footer-social mt-3">
+                        <h4 class="mb-3">Suivez-nous</h4>
+                        <div class="d-flex gap-3">
+                            <a href="https://fb.com" target="_blank" rel="noopener" class="social-btn" aria-label="Page Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-btn" aria-label="Chaîne Youtube">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- BARRE BAS DU FOOTER -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="mb-0">
+                © <span id="currentYear">2026</span> Groupe EICG - Tous droits réservés | Mentions légales | Politique de confidentialité
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- ================================================================
+     BOUTON RETOUR EN HAUT
+==================================================================================== -->
+<button class="back-to-top" aria-label="Retour en haut">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- ============================================================
+     BOOTSTRAP JS BUNDLE (POPPER + JS)
+==================================================================================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ============================================================
+     JS PERSONNALISÉ
+==================================================================================== -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
